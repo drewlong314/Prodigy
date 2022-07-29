@@ -1,0 +1,44 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+  File "game/script.rpy", line 1, in prepare_screen
+    screen point_and_click():
+  File "game/script.rpy", line 1, in prepare
+    screen point_and_click():
+  File "game/script.rpy", line 4, in prepare
+    imagebutton:
+  File "game/script.rpy", line 4, in prepare
+    imagebutton:
+  File "game/script.rpy", line 8, in <module>
+    action Jump()
+TypeError: __init__() missing 1 required positional argument: 'label'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "/Users/drew/Desktop/renpy-8.0.1-sdk/renpy/bootstrap.py", line 274, in bootstrap
+    renpy.main.main()
+  File "/Users/drew/Desktop/renpy-8.0.1-sdk/renpy/main.py", line 660, in main
+    run(restart)
+  File "/Users/drew/Desktop/renpy-8.0.1-sdk/renpy/main.py", line 95, in run
+    renpy.display.screen.prepare_screens()
+  File "/Users/drew/Desktop/renpy-8.0.1-sdk/renpy/display/screen.py", line 976, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/script.rpy", line 1, in prepare_screen
+    screen point_and_click():
+  File "game/script.rpy", line 1, in prepare
+    screen point_and_click():
+  File "game/script.rpy", line 4, in prepare
+    imagebutton:
+  File "game/script.rpy", line 4, in prepare
+    imagebutton:
+  File "/Users/drew/Desktop/renpy-8.0.1-sdk/renpy/python.py", line 1073, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 8, in <module>
+    action Jump()
+TypeError: __init__() missing 1 required positional argument: 'label'
+
+macOS-10.16-x86_64-i386-64bit x86_64
+Ren'Py 8.0.1.22070801
+Prodigy 1.0
+Thu Jul 28 23:11:19 2022
