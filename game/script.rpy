@@ -10,6 +10,10 @@
         yalign 0.5
         action Jump('right_box')
 
+screen thanks():
+    text "{color=#000000}Thanks for playing!{/color}" size 80 xalign 0.5 yalign 0.5
+    textbutton " " text_size 10000 action Return()
+
 
 transform shake(rate=0.090):
     linear rate xoffset 2 yoffset -6
@@ -197,6 +201,7 @@ label start:
                 j "Thank you, that's sweet, really."
                 show june content at center with move
                 j "You know what? I think it's finished."
+                call screen thanks
                 return
                 # Ending 1 Complete
 
@@ -217,5 +222,6 @@ label start:
             show june mad
             j "I really shouldn't have said anything."
             j "If you have nothing else to do but waste my time, get out."
+            call screen thanks
 
     return
