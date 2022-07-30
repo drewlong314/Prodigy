@@ -18,12 +18,12 @@ define config.name = _("Prodigy")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
 
-define config.version = "1.0"
+# define config.version = "1.0"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -150,7 +150,7 @@ define config.save_directory = "Prodigy-1659046386"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "prodigylogo.png"
 
 
 ## Build configuration #########################################################
@@ -206,4 +206,4 @@ init python:
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
 
-# define build.itch_project = "renpytom/test-project"
+define build.itch_project = "corsacode/Prodigy"

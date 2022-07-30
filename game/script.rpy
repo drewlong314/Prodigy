@@ -64,7 +64,7 @@ label start:
         "{i}She turns away and continues working. I really have to find that ID!{/i}"
         "{i}Let's see, I was sitting over there, so maybe it's…{/i}"
         hide june
-        
+
         # Point and Click
         call screen point_and_click
         label left_box:
@@ -131,7 +131,7 @@ label start:
             j "..."
             show june neutral
             j "Fine, here it is. Just remember, I'm trusting you with this, okay? Artist to Artist"
-            show june neutral at left
+            show june neutral at left with move
             "{i}It's.{/i}"
             "{i}Wow.{/i}"
             "{i}Incredible, typical.{/i}"
@@ -184,7 +184,7 @@ label start:
                 show june tearing up
                 "Hey, hey, are you okay?"
                 j "I, yeah, I'm just having a hard time with this p-painting, but I shouldn't be! I'm June Goldeen! The prodigy! And if I can't even do this simple assignment, then!"
-                "{i}Crap, now I really feel about trying to bring her down. June clearly has had a lot on her plate, for probably way longer than I can imagine.{/i}"
+                "{i}Crap, now I really feel bad about trying to bring her down. June clearly has had a lot on her plate, for probably way longer than I can imagine.{/i}"
                 "Woah, let's breathe, okay?"
                 "{i}I place my hand on hers, and she's trembling. She takes in a shaky breath, and I feel the tension lessen with each frightened exhale.{/i}"
                 show june worried
@@ -195,7 +195,7 @@ label start:
                 "You're a human person, with limits and needs, not just a prodigy. You're allowed to take breaks, and you're allowed to just…be. You don't have to be the best."
                 show june nervous
                 j "Thank you, that's sweet, really."
-                show june content at center
+                show june content at center with move
                 j "You know what? I think it's finished."
                 return
                 # Ending 1 Complete
